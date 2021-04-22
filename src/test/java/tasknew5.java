@@ -8,8 +8,9 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class tasknew5 {
     String
-    repos = "npavlenkov/tasks",
-    issuesnomer = "#1";
+            repos = "npavlenkov/tasks",
+            issuesnomer = "#1";
+
     @Test
     public void test5() {
         open("https://github.com");
@@ -20,8 +21,6 @@ public class tasknew5 {
         $(withText("Issues")).click();
         $(withText(issuesnomer)).should(Condition.exist);
 
-
-        sleep(5000);
 
     }
 }
