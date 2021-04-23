@@ -1,4 +1,5 @@
 import io.pavlenkov.Basesteps;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class metodsteps {
@@ -8,6 +9,7 @@ public class metodsteps {
             issuesnomer = "#1";
 
     @Test
+
     public void testIssuseSearch() {
         steps.openMainPage();
         steps.searchForRepository(repos);
